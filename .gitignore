@@ -1,0 +1,58 @@
+# ============================================================
+#  Android / Kotlin — Anime Tracker
+# ============================================================
+
+# ----- Gradle build outputs --------------------------------
+.gradle/
+build/
+**/build/
+out/
+
+# ----- Android Studio / IntelliJ ---------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+local.properties          # Contains SDK path — machine-specific, never commit
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ----- Room schema exports ---------------------------------
+# If you later enable exportSchema = true in AnimeDatabase,
+# schema JSON files go here. Uncomment if you want to track them.
+# app/schemas/
+
+# ----- Keystore / signing ----------------------------------
+*.jks
+*.keystore
+keystore.properties       # API keys, signing passwords — NEVER commit
+
+# ----- APKs and bundles ------------------------------------
+*.apk
+*.aab
+*.dex
+
+# ----- Kotlin/Java compilation artifacts -------------------
+*.class
+*.jar
+
+# ----- Profiling & test results ----------------------------
+*.hprof
+*.prof
+lint/
+test-results/
+
+# ----- macOS (if you ever collaborate with Mac users) ------
+.DS_Store
+
+# ----- Windows ---------------------------------------------
+Thumbs.db
+
+# ----- Environment / secrets (stretch: Retrofit, API keys) -
+.env
+secrets.properties
+
+# ----- KSP (Kotlin Symbol Processing) generated files ------
+# These are regenerated at build time, no need to track
+**/generated/
